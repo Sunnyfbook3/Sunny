@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Streaming</title>
+</head>
+<body>
+    <form id="stream-form">
+        <label for="video">Upload Video:</label>
+        <input type="file" id="video" accept="video/*" required>
+        
+        <label for="stream-url">Stream URL:</label>
+        <input type="text" id="stream-url" placeholder="Enter RTMPS Stream URL" required>
+
+        <label for="stream-key">Stream Key:</label>
+        <input type="text" id="stream-key" placeholder="Enter Stream Key" required>
+
+        <button type="button" onclick="startStreaming()">Start Streaming</button>
+    </form>
+
+    <script src="streaming.js"></script>
+</body>
+</html>
